@@ -355,7 +355,7 @@ ul{
   background-color: #bbb;
   color: black;
   border-radius: 20px;
-	background:rgba(255,121,124,0.36);
+	background:rgb(255, 208, 208);
 }
 
 
@@ -365,7 +365,7 @@ ul{
   color: white;
   transform: rotateX(180deg);
   border-radius: 20px;
-  background:rgba(255,121,124,0.36);
+  background:rgb(255, 208, 208);
   width: 100%;
   padding:0 auto;
 
@@ -591,9 +591,7 @@ ol li h1{
 }
 
 .borderrrr{
-
   background-color: rgb(255, 208, 208);
- 
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 20px;
@@ -636,5 +634,10 @@ ol li h1{
   }
   #hr1{
     display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  main{
+    background-color: rgba(255, 255, 255, 0.734);
   }
 }
