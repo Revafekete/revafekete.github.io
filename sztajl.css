@@ -34,7 +34,7 @@ h2{
 }
 
 body{
-    background-image: url('hatter2.png');
+    background-image: url('hatter.gif');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,13 +53,16 @@ body p{
 }
 
 main{
-
-        text-align: center;
-
-        padding: 5%;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0 0 30px rgba(152, 72, 72, 0.532);
-
+  border-radius: 15px;
+  margin: 3% 3%;
+  text-align: center;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.899);
+  box-shadow: 0 0 30px rgba(152, 72, 72, 0.532);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 
@@ -79,7 +82,7 @@ h1{
 
 @media screen and (max-width: 400px) {
     #yaukoh1{
-        font-size: 10vw;
+        font-size: 16vw;
     }
 
   }
@@ -208,6 +211,7 @@ hr{
    min-width: 100%;
    max-width: 90px;
    margin: 1.2% auto;
+   padding-bottom: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -533,6 +537,7 @@ border-radius: 5px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  box-shadow: 0 0 20px #a539391c;
 }
 .borderrr{
  
@@ -549,6 +554,7 @@ border-radius: 5px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  
 }
 ol{
   padding: 0px;
@@ -580,4 +586,9 @@ header{
 ol li h1{
   padding-top: 15px;
   padding-left: 5px;
+}
+@media screen and (min-width: 600px) {
+  #latszas{
+    display: none;
+  }
 }
