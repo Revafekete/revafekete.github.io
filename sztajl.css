@@ -622,3 +622,19 @@ ol li h1{
     display: none;
   }
 }
+
+.borderrrr{
+
+  background-color: rgb(255, 208, 208);
+ 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0 0 20px #a539391c;
+}
