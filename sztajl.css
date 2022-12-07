@@ -107,7 +107,12 @@ p{
 .navlinkek{
 	list-style: none;
 }
-
+.navlinkek #active{
+  background-color: rgb(254, 174, 174);
+}
+.navlinkek #active a{
+  color: white;
+}
 .navlinkek li{
 	display: inline-block;
 	padding: 0px 10px;
