@@ -116,7 +116,7 @@ p{
 	margin-top: 8px;
 	padding-top: 8px;
 
-	background-color: #ffbdbd;
+	background-color: rgb(255, 208, 208);
 	-webkit-transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
 	-ms-transition: all 0.5s ease 0s;
@@ -203,7 +203,7 @@ a{
 }
 
 hr{
-    border-top: 4px solid #E97777;
+    border-top: #E97777 dashed 4px;
     border-bottom: 0px;
     border-right: 0px;
     border-left: 0px;
@@ -246,14 +246,39 @@ hr{
   }
 
   #hr{
-    min-width: 100%;
-    max-width: 90px;
-    border-top: 4px solid #E97777;
+    border-top: #E97777 dashed 4px;
     border-bottom: 0px;
     border-right: 0px;
     border-left: 0px;
+   margin-bottom: 1.2%;
+   min-width: 100%;
+   margin: 1.2% auto;
+   margin-top: 25px;
+   padding-bottom: 10px;
 
-    margin: 0 auto;
+
+  }
+  #hr1{
+    border-top: #E97777 dashed 4px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+   margin-bottom: 1.2%;
+   min-width: 100%;
+   margin: 1.2% auto;
+   margin-top: 10px;
+   padding-bottom: 20px;
+
+
+  }
+
+  @media screen and (min-width: 900px) {
+    #hr{
+      display: none;
+    }
+    #hr1{
+      display: none;
+    }
   }
 
   #logo{
@@ -528,7 +553,7 @@ border-radius: 5px;
 
 .borderr{
 
-  background-color: rgb(255, 193, 193);
+  background-color: rgb(255, 208, 208);
  
   padding-top: 5px;
   padding-bottom: 10px;
@@ -548,13 +573,13 @@ border-radius: 5px;
   max-width: 250px;
   padding-top: 5px;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding-left: 1%;
   padding-right: 1%;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 ol{
   padding: 0px;
