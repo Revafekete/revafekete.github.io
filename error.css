@@ -1,0 +1,200 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(CuteFont-Regular.ttf);
+}
+@font-face {
+  font-family: andina;
+  src: url(Andina\ Demo.otf);
+}
+@font-face {
+  font-family: choco;
+  src: url(White\ Chocolate\ Mint\ -\ TTF.ttf)
+}
+@font-face {
+  font-family: aquate;
+  src: url(AquateScript_PERSONAL_USE_ONLY.ttf)
+}
+@font-face {
+  font-family: awesome;
+  src: url(Really\ Awesome\ -\ TTF.ttf)
+}
+h2{
+	font-family: awesome;
+	font-size: 200%;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+
+body{
+    background-image: url('hatter.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #eb6c6c;
+    font-family: andina;
+    
+}
+
+
+
+body p{
+    background: #eb6c6c;
+    background: linear-gradient(to right, #ea8a8a 0%, #e05252 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+main{
+
+  text-align: center;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.853);
+  box-shadow: 0 0 30px rgba(152, 72, 72, 0.532);
+
+}
+
+
+
+main #p{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: aquate;
+    font-weight: 50;
+    margin: 0;
+    font-size: 50px;
+    color: #E97777;
+}
+
+@media screen and (max-width: 400px) {
+    #yaukoh1{
+        font-size: 16vw;
+    }
+
+  }
+
+  h3{
+    font-size: larger;
+  }
+
+h4{
+    margin: 0;
+    font-family: awesome;
+}
+
+p{
+    font-family: choco;
+    font-size: 250%;
+    font-weight: 500;
+}
+
+
+
+.navlinkek{
+	list-style: none;
+}
+.navlinkek #active{
+  background-color: rgb(253, 167, 167);
+}
+.navlinkek #active a{
+  color: white;
+}
+.navlinkek li{
+	display: inline-block;
+	padding: 0px 10px;
+	transition: all 0.5s ease 0s;
+	border-radius: 30px;
+	margin-top: 8px;
+	padding-top: 8px;
+
+	background-color: rgb(255, 208, 208);
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .navlinkek li{
+    width:100%;
+  }
+}
+.navlinkek li a{
+	transition: all 0.3s ease 0s;
+	color:#b75050;
+	text-decoration: none;
+  font-family: aquate;
+  font-size: 200%;
+  padding: 30px;
+  background-color: transparent;
+}
+.navlinkek li a:hover{
+  color: rgb(255, 255, 255);
+}
+.navlinkek li:hover{
+  background-color: rgba(226,99,101,1.00);
+  -webkit-text-fill-color: white;
+}
+.navlinkek li:hover{
+  -webkit-text-fill-color: white;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f9a7a7;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #E97777;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b75050;
+    border-radius: 5px;
+  }
+
+
+ul{
+	list-style-type: none;
+}
+
+
+
+
+ul li{
+  display: inline-block;
+  padding-bottom: 2%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  main{
+    background-color: rgba(255, 255, 255, 0.734);
+  }
+}
