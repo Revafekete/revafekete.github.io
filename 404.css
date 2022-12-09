@@ -53,14 +53,18 @@ body p{
     max-width: 800px;
     margin: 0 auto;
     padding: 0;
+
 }
 
 main{
-
+  
+  margin: auto;
   text-align: center;
   padding: 5%;
   background-color: rgba(255, 255, 255, 0.853);
-  box-shadow: 0 0 30px rgba(152, 72, 72, 0.532);
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
 
 }
 
@@ -75,7 +79,7 @@ h1{
     font-family: aquate;
     font-weight: 50;
     margin: 0;
-    font-size: 50px;
+    font-size: 8vh;
     color: #E97777;
 }
 
@@ -198,3 +202,17 @@ ul li{
     background-color: rgba(255, 255, 255, 0.734);
   }
 }
+
+h1{
+
+
+}
+
+
+
+
+.tartalom{
+  margin-top: 15%;
+  vertical-align: middle;
+}
+
