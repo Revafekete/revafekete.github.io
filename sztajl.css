@@ -34,11 +34,11 @@ h2{
 }
 
 body{
-    background-image: url('hatter.gif');
+    background-image: url('hatteee.gif');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #eb6c6c;
+    color: #6c5746;
     font-family: andina;
     
 }
@@ -46,8 +46,8 @@ body{
 
 
 body p{
-    background: #eb6c6c;
-    background: linear-gradient(to right, #ea8a8a 0%, #e05252 100%);
+    background: #836953;
+    background: linear-gradient(to right, #7e6755 0%, #6c5746 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     max-width: 800px;
@@ -60,8 +60,8 @@ main{
   margin: 3% 3%;
   text-align: center;
   padding: 5%;
-  background-color: rgba(255, 255, 255, 0.853);
-  box-shadow: 0 0 30px rgba(152, 72, 72, 0.532);
+  background-color: rgba(255, 233, 221, 0.853);
+  box-shadow: 0 0 30px rgba(131, 104, 83, 0.761);
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -80,7 +80,7 @@ h1{
     font-weight: 50;
     margin: 0;
     font-size: 50px;
-    color: #E97777;
+    color: #6c5746;
 }
 
 @media screen and (max-width: 400px) {
@@ -111,7 +111,7 @@ p{
 	list-style: none;
 }
 .navlinkek #active{
-  background-color: rgb(253, 167, 167);
+  background-color: #836853;
 }
 .navlinkek #active a{
   color: white;
@@ -124,7 +124,7 @@ p{
 	margin-top: 8px;
 	padding-top: 8px;
 
-	background-color: rgb(255, 208, 208);
+	background-color: #ccab92;
 	-webkit-transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
 	-ms-transition: all 0.5s ease 0s;
@@ -142,7 +142,7 @@ p{
 }
 .navlinkek li a{
 	transition: all 0.3s ease 0s;
-	color:#b75050;
+	color:#725b4a;
 	text-decoration: none;
   font-family: aquate;
   font-size: 200%;
@@ -153,7 +153,7 @@ p{
   color: rgb(255, 255, 255);
 }
 .navlinkek li:hover{
-  background-color: rgba(226,99,101,1.00);
+  background-color: #725b4a;
   -webkit-text-fill-color: white;
 }
 .navlinkek li:hover{
@@ -184,12 +184,12 @@ p{
 
 a{
     text-decoration: none;
-    color: #a53939;
+    color: #6c5746;
 }
 
 #keszitoa:hover{
   text-decoration: none;
-  color: #912929;
+  color: #705a49;
   font-weight: 900;
 }
 
@@ -211,7 +211,7 @@ a{
 }
 
 hr{
-    border-top: #E97777 dashed 4px;
+    border-top: #836953 dashed 4px;
     border-bottom: 0px;
     border-right: 0px;
     border-left: 0px;
@@ -228,16 +228,16 @@ hr{
   }
 
   ::-webkit-scrollbar-track {
-    background: #f9a7a7;
+    background: #ba977b;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #E97777;
+    background: #836953;
     border-radius: 5px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #b75050;
+    background: 836853;
     border-radius: 5px;
   }
 
@@ -320,8 +320,8 @@ ul{
 }
 
 .flip-card-inner {
-  border-left: 4px rgba(255,121,124,0.36) dashed;
-  border-right: 4px rgba(255,121,124,0.36) dashed;
+  border-left: 4px #b4937a dashed;
+  border-right: 4px #b4937a dashed;
   position: relative;
   width: 100%;
   height: 100%;
@@ -359,17 +359,17 @@ ul{
   background-color: #bbb;
   color: black;
   border-radius: 20px;
-	background:rgb(255, 208, 208);
+	background:#cba78c;
 }
 
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #ffbdbd;
+  background-color: #9b7b64;
   color: white;
   transform: rotateX(180deg);
   border-radius: 20px;
-  background:rgb(255, 208, 208);
+  background:#bc997f;
   width: 100%;
   padding:0 auto;
 
@@ -419,7 +419,7 @@ ul li{
 	width:100%;
 	transition: all 0.3s ease 0s;
   border-radius: 5px;
-  border-bottom: 2px solid #E97777;
+  border-bottom: 2px solid #836953;
 
 }
 @media screen and (max-width: 500px) {
@@ -429,7 +429,7 @@ ul li{
 }
 .kartyalinkek li a{
 	transition: all 0.3s ease 0s;
-	color:#b75050;
+	color:836853;
 	text-decoration: none;
   font-family: aquate;
   font-size: 200%;
@@ -441,7 +441,7 @@ ul li{
 }
 
 .kartyalinkek li:hover{
-  background-color: rgba(226,99,101,1.00);
+  background-color: #826c5b;
   -webkit-text-fill-color: white;
 }
 
@@ -456,13 +456,12 @@ ul li{
 }
 
 .kartyalinkek1 li{
-  
 	display: inline-block;
 	padding-top: 10px;
 	width:100%;
 	transition: all 0.3s ease 0s;
-border-radius: 5px;
-  border-bottom: 2px solid #E97777;
+  border-radius: 5px;
+  border-bottom: 2px solid #836953;
 
 
 }
@@ -475,7 +474,7 @@ border-radius: 5px;
 
 .kartyalinkek1 li a{
 	transition: all 0.3s ease 0s;
-	color:#b75050;
+	color:836853;
 	text-decoration: none;
   font-family: aquate;
   font-size: 200%;
@@ -487,7 +486,7 @@ border-radius: 5px;
 }
 
 .kartyalinkek1 li:hover{
-  background-color: rgba(226,99,101,1.00);
+  background-color: #826c5b;
   -webkit-text-fill-color: white;
 }
 
@@ -503,7 +502,7 @@ border-radius: 5px;
 	width:100%;
 	transition: all 0.3s ease 0s;
   border-radius: 5px;
-  border-bottom: 2px solid #E97777;
+  border-bottom: 2px solid #836953;
 
 }
 @media screen and (max-width: 500px) {
@@ -513,7 +512,7 @@ border-radius: 5px;
 }
 .kartyalinkek2 li a{
 	transition: all 0.3s ease 0s;
-	color:#b75050;
+	color:836853;
 	text-decoration: none;
   font-family: aquate;
   font-size: 200%;
@@ -525,12 +524,12 @@ border-radius: 5px;
 }
 
 .kartyalinkek2 li:hover{
-  background-color: rgba(226,99,101,1.00);
+  background-color: #826c5b;
   -webkit-text-fill-color: white;
 }
 
 .borderr{
-  background-color: rgb(255, 208, 208);
+  background-color: #ccab92;
   padding-top: 5px;
   padding-bottom: 10px;
   border-radius: 20px;
@@ -540,12 +539,12 @@ border-radius: 5px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  box-shadow: 0 0 20px #a539391c;
+  box-shadow: 0 0 20px #8368531c;
 }
 .borderrr{
-  color: #b75050;
+  color: 836853;
   margin: 0 auto;
-  background-color: rgb(255, 208, 208);
+  background-color: #ccab92;
   max-width: 280px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -595,7 +594,7 @@ ol li h1{
 }
 
 .borderrrr{
-  background-color: rgb(255, 208, 208);
+  background-color: #ccab92;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 20px;
@@ -605,11 +604,11 @@ ol li h1{
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  box-shadow: 0 0 20px #a539391c;
+  box-shadow: 0 0 20px #8368531c;
 }
 
 #hr{
-  border-top: #E97777 dashed 4px;
+  border-top: #836953 dashed 4px;
   border-bottom: 0px;
   border-right: 0px;
   border-left: 0px;
@@ -621,7 +620,7 @@ ol li h1{
 }
 
 #hr1{
-  border-top: #E97777 dashed 4px;
+  border-top: #836953 dashed 4px;
   border-bottom: 0px;
   border-right: 0px;
   border-left: 0px;
