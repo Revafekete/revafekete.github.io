@@ -76,109 +76,109 @@ main #p{
 }
 
 h1{
-    font-family: aquate;
-    font-weight: 50;
-    margin: 0;
-    font-size: 8vh;
-    color: #E97777;
+  font-family: aquate;
+  font-weight: 50;
+  margin: 0;
+  font-size: 50px;
+  color: #6c5746;
 }
 
 @media screen and (max-width: 400px) {
-    #yaukoh1{
-        font-size: 16vw;
-    }
-
+  #yaukoh1{
+      font-size: 16vw;
   }
 
-  h3{
-    font-size: larger;
-  }
+}
+
+h3{
+  font-size: larger;
+}
 
 h4{
-    margin: 0;
-    font-family: awesome;
+  margin: 0;
+  font-family: awesome;
 }
 
 p{
-    font-family: choco;
-    font-size: 250%;
-    font-weight: 500;
+  font-family: choco;
+  font-size: 250%;
+  font-weight: 500;
 }
 
 
 
 .navlinkek{
-	list-style: none;
+list-style: none;
 }
 .navlinkek #active{
-  background-color: rgb(253, 167, 167);
+background-color: #836853;
 }
 .navlinkek #active a{
-  color: white;
+color: white;
 }
 .navlinkek li{
-	display: inline-block;
-	padding: 0px 10px;
-	transition: all 0.5s ease 0s;
-	border-radius: 30px;
-	margin-top: 8px;
-	padding-top: 8px;
+display: inline-block;
+padding: 0px 10px;
+transition: all 0.5s ease 0s;
+border-radius: 30px;
+margin-top: 8px;
+padding-top: 8px;
 
-	background-color: rgb(255, 208, 208);
-	-webkit-transition: all 0.5s ease 0s;
-	-moz-transition: all 0.5s ease 0s;
-	-ms-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
+background-color: #ccab92;
+-webkit-transition: all 0.5s ease 0s;
+-moz-transition: all 0.5s ease 0s;
+-ms-transition: all 0.5s ease 0s;
+-o-transition: all 0.5s ease 0s;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+-ms-border-radius: 30px;
+-o-border-radius: 30px;
 }
 
 @media screen and (max-width: 500px) {
-  .navlinkek li{
-    width:100%;
-  }
+.navlinkek li{
+  width:100%;
+}
 }
 .navlinkek li a{
-	transition: all 0.3s ease 0s;
-	color:#b75050;
-	text-decoration: none;
-  font-family: aquate;
-  font-size: 200%;
-  padding: 30px;
-  background-color: transparent;
+transition: all 0.3s ease 0s;
+color:#725b4a;
+text-decoration: none;
+font-family: aquate;
+font-size: 200%;
+padding: 30px;
+background-color: transparent;
 }
 .navlinkek li a:hover{
-  color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
 }
 .navlinkek li:hover{
-  background-color: rgba(226,99,101,1.00);
-  -webkit-text-fill-color: white;
+background-color: #725b4a;
+-webkit-text-fill-color: white;
 }
 .navlinkek li:hover{
-  -webkit-text-fill-color: white;
+-webkit-text-fill-color: white;
 }
 
 
 ::-webkit-scrollbar {
-    width: 8px;
-    border-radius: 5px;
-  }
+  width: 8px;
+  border-radius: 5px;
+}
 
-  ::-webkit-scrollbar-track {
-    background: #f9a7a7;
-  }
+::-webkit-scrollbar-track {
+  background: #ba977b;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: #E97777;
-    border-radius: 5px;
-  }
+::-webkit-scrollbar-thumb {
+  background: #836953;
+  border-radius: 5px;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #b75050;
-    border-radius: 5px;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: 836853;
+  border-radius: 5px;
+}
 
 
 ul{
@@ -199,7 +199,7 @@ ul li{
 
 @media screen and (max-width: 800px) {
   main{
-    background-color: rgba(255, 255, 255, 0.734);
+    background-color: rgba(255, 233, 221, 0.853);
   }
 }
 

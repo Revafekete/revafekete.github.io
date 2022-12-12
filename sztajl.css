@@ -34,7 +34,7 @@ h2{
 }
 
 body{
-    background-image: url('hatteee.gif');
+    background-image: url('hatter.gif');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@ main{
   margin: 3% 3%;
   text-align: center;
   padding: 5%;
-  background-color: rgba(255, 233, 221, 0.853);
+  background-color: rgba(255, 239, 231, 0.93);
   box-shadow: 0 0 30px rgba(131, 104, 83, 0.761);
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
