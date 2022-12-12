@@ -38,7 +38,6 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #eb6c6c;
     font-family: andina;
     
 }
@@ -46,10 +45,6 @@ body{
 
 
 body p{
-    background: #eb6c6c;
-    background: linear-gradient(to right, #ea8a8a 0%, #e05252 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     max-width: 800px;
     margin: 0 auto;
     padding: 0;
