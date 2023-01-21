@@ -328,11 +328,11 @@ ul{
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  border-radius: 21px;
+  -webkit-border-radius: 21px;
+  -moz-border-radius: 21px;
+  -ms-border-radius: 21px;
+  -o-border-radius: 21px;
 }
 
 .flip-card:hover .flip-card-inner {
