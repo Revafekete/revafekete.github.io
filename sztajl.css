@@ -320,8 +320,8 @@ ul{
 }
 
 .flip-card-inner {
-  border-left: 4px #b4937a dashed;
-  border-right: 4px #b4937a dashed;
+  border-left: 4px #b4937a solid;
+  border-right: 4px #b4937a solid;
   position: relative;
   width: 100%;
   height: 100%;
