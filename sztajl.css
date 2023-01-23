@@ -176,7 +176,7 @@ p{
     padding-bottom: 10px;
 }
 
-#keszito{
+#brdr{
     font-family: awesome;
     font-weight: 800;
     font-size: 150%;
@@ -188,7 +188,7 @@ a{
     color: #6c5746;
 }
 
-#keszitoa:hover{
+#brdr a:hover{
   text-decoration: none;
   color: #705a49;
   font-weight: 900;
@@ -212,7 +212,7 @@ a{
 }
 
 hr{
-    border-top: #836953 dashed 4px;
+    border-top: #836953 solid 4px;
     border-bottom: 0px;
     border-right: 0px;
     border-left: 0px;
@@ -672,11 +672,11 @@ ol li h1{
 }
 @media screen and (max-width: 800px) {
   main{
-    background-color: rgba(255, 255, 255, 0.734);
+    background-color: rgba(255, 255, 255, 0.877);
   }
 }
 
-#keszito{
+#brdr{
   background-color: #836853;
   border-radius: 20px;
   -webkit-border-radius: 20px;
