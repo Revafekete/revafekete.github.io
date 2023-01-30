@@ -154,7 +154,7 @@ p{
   color: rgb(255, 255, 255);
 }
 .navlinkek li:hover{
-  background-color: #725b4a;
+  background-color: #836853;
   -webkit-text-fill-color: white;
 }
 .navlinkek li:hover{
@@ -686,4 +686,10 @@ ol li h1{
   color: white;
   padding:10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.123);
+}
+
+@media screen and (min-width: 800px) {
+  #ber{
+    display: none;
+  }
 }
