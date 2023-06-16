@@ -44,7 +44,9 @@ h1{
     text-align: center;
 
 }
+
 ul{
+    max-width: 600px;
      margin-top: 50px;
 }
 .gombok{
@@ -52,12 +54,18 @@ ul{
     margin: 0 auto;
     margin-top: 40px;
     padding: 0px;
-    max-width: 80%;
+
 }
+
 ul li{
+    
     margin: 20px 10px 20px 10px;
     list-style-type: none;
     display: inline-block;
+
+}
+.navigacio{
+    text-align: center;
 }
 .gomb{
     width: fit-content;
@@ -74,23 +82,11 @@ ul li{
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+    background-color: #1f1f1f;
+    color: #eaeaea;
 }
-.gomb:nth-child(1){
-    background-color: #281616;
-    color: #edd1d1;
-}
-.gomb:nth-child(2){
-    background-color: #132122;
-    color: #cfebee;
-}
-.gomb:nth-child(3){
-    background-color: #262626;
-    color: #efefef;
-}
-.gomb:nth-child(4){
-    background-color: #262626;
-    color: #efefef;
-}
+
+
 .gomb:hover{
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -100,6 +96,15 @@ ul li{
     background-color: #333333;
 }
 label{
-    float: left;
+    margin-left: 50px;
+    margin-right: 20px;
+    display: block;
+    text-align: left;
     font-family: Gotham_normal;
+}
+@media screen and (max-width: 800px) {
+    label{
+        text-align: center;
+        margin-left: 0px;
+    }
 }
