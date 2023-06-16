@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Gotham_bold;
+    src: url(../fonts/GothamBold.ttf);
+}
+@font-face {
+    font-family: Gotham_normal;
+    src: url(../fonts/GothamBook.ttf);
+}
+@font-face {
+    font-family: Gotham_light;
+    src: url(../fonts/GothamLight.otf);
+}
+@font-face {
+    font-family: Gotham_medium;
+    src: url(../fonts/GothamMedium_1.ttf);
+}
+@font-face {
+    font-family: Gotham_thin;
+    src: url(../fonts/GothamThin.otf);
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #efefef;
+
+}
+p{
+    font-family: Gotham_light;
+}
+h1{
+    font-family: Gotham_bold;
+}
+.tartalom{
+    position: relative;
+    margin-top: clamp(20vh, 35vh,40vh);
+    text-align: center;
+
+}
