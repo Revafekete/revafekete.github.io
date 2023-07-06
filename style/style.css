@@ -59,7 +59,7 @@ ul{
 
 ul li{
     
-    margin: 20px 10px 20px 10px;
+    margin: 25px 15px 25px 15px;
     list-style-type: none;
     display: inline-block;
 
@@ -85,7 +85,11 @@ ul li{
     background-color: #1f1f1f;
     color: #eaeaea;
 }
-
+.gomb:focus{
+    background-color: #121212;
+    outline: 1px solid white;
+    outline-offset: 1px;
+}
 
 .gomb:hover{
     transition: 0.5s;
@@ -107,4 +111,7 @@ label{
         text-align: center;
         margin-left: 0px;
     }
+}
+.szurke{
+    color:rgb(166, 166, 166) !important;
 }
