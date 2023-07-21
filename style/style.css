@@ -115,3 +115,17 @@ label{
 .szurke{
     color:rgb(166, 166, 166) !important;
 }
+i{
+    color: #d4d4d4;
+}
+#elso{color: rgb(187, 70, 70);}
+#masodik{color:rgb(193, 105, 42)}
+#harmadik{color:rgb(193, 180, 42)}
+#negyedik{color:rgb(95, 193, 42)}
+#otodik{color:rgb(42, 193, 118)}
+.gombok p{
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
