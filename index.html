@@ -2,42 +2,207 @@
 <html lang="hu">
     <head>
         <title>
-            YAUKO | Készülőben..
+            @Emmatsoka
         </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, height=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="style/style.css">
         <meta property="og:title" content="YAUKO | Készülőben..">
-        <link rel="icon" href="icon.png" type="image">
-
+        <link rel="icon" href="img/trans.png" type="image">
+ 
     </head>
     <body>
-      <main>
-        <div class="tartalom">
-            <div class="egesz">
-        <h1>A portfolio keszuloben..</h1>
-        <p>Gyere vissza kesobb!</p>
-        
-        <div class="navigacio">
-            <ul class="gombok">
-                <label>Tovabbi munkaim <span class="szurke">(idosorrendben)</span></label>
-                <p> <i>A legtobb weboldal sulis hazira keszult. Elso a legrosszabb, utolso a legjobb.</i></p>
-                <li><a href="http://www.emmatsoka.site/regiweb.github.io/" class="gomb" target="_blank"><span id="elso">1</span> | Yauko régi web (R.I.P Domain)</a></li>
-                <li><a href="https://www.emmatsoka.site/tudatoselet.github.io/" class="gomb" target="_blank"><span id="masodik">2</span> | Tudatos Elet</a></li>
-                <li><a href="http://wp.yauko.webtelek.hu/" class="gomb" target="_blank"><span id="harmadik">3</span> | WordPress oldal</a></li>
-                <li><a href="https://www.freejatek.site/" class="gomb" target="_blank"><span id="negyedik">4</span> | FreeJatek (R.I.P Domain)</a></li>
-                <li><a href="https://www.emmatsoka.site/animehun.github.io/" class="gomb" target="_blank"><span id="otodik">5</span> | Anihun</a></li>
-                <li><a href="https://www.emmatsoka.site/playstation.github.io/" class="gomb" target="_blank"><span id="hatodik">6</span> | PS 1 ref (Kedvenc)</a></li>
-                <li><a href="https://sulihazi.github.io/egeszsegeseletmod.github.io" class="gomb" target="_blank"><span id="hetedik">7</span> | EGMÓD web</a></li>
-                <li><a href="https://www.emmatsoka.site/antonshoes.github.io/" class="gomb" target="_blank"><span id="nyolcadik">8</span> | Anton Shoes</a></li>
-                  <li><a href="https://www.wesoc.site" class="gomb" target="_blank"><span id="kilencedik">9</span> | Wesoc (Kedvenc)</a></li>
-            
-         
-           
-            </ul>
+        <div class="hatter-container">
+            <div class="hatter"></div>
         </div>
-        </div>
-        </div>
-      </main>
+        <div class="container mt-5">
+            <div class="row ">
+                <div class="col-md-3">
+                    <div class="box">
+                        <img src="img/usr.jpg" alt="" id="profil">
+                        <p><b>Szanyi</b>  <b>Emma</b> 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span></p>
+                        <p>she/her | 19</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="box mb-4">
+                        <h4><b>Bemutatkozás.</b></h4>
+                        <p>Üdv! Emma vagyok, webdesigner és szoftverfejlesztő. 
+                        Gödöllőn élek, és nemrég fejeztem be a szoftverfejlesztő szakot, ahol 79%-os eredménnyel végeztem. Jelenleg webdesign és fejlesztés terén tevékenykedem, és mindig keresem az új lehetőségeket a fejlődésre és tanulásra.</p>
+                    </div>
+                </div>
+                    <div class="col-md-5">
+                    <div class="box" id="ismeretek">
+                        <h4><b>Ismeretek.</b></h4>
+                        <ul id="minibox-container">
+                            <li><a href="https://en.wikipedia.org/wiki/HTML" title="HTML"><div class="minibox"><img src="img/html.webp" alt=""></div></a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/CSS" title="CSS"><div class="minibox"><img src="img/css.png" alt=""></div></a></li>
+                            <li><a href="https://getbootstrap.com/" title="Bootstrap"><div class="minibox"><img src="img/bootstrap.png" alt=""></div></a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"><div class="minibox"><img src="img/javascript.png" alt=""></div></a></li>
+                            <li><a href="https://www.php.net/" title="php"><div class="minibox"><img src="img/php.webp" alt=""></div></a></li>
+                            <li><a href="https://laravel.com/" title="Laravel"><div class="minibox"><img src="img/laravel.png" alt=""></div></a></li>
+                            <li><a href="https://wordpress.com/" title="Wordpress"><div class="minibox"><img src="img/wordpress.png" alt=""></div></a></li>
+                            <li><a href="https://hu.wikipedia.org/wiki/C_Sharp" title="C#"><div class="minibox"><img src="img/csharp.png" alt=""></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="box" id="projektek">
+                        <h4><b>Projektek. </b> <span class="kissebb">saját / <span class="kek">résztvevő</span></span> </span></h4> 
+                        <ul id="minibox-container">
+                            <li> 
+                                <a href="https://www.wesoc.site/" target="_blank">
+                                <div class="projectbox">
+                            <div class="project-icon">
+                                <img src="img/Wesoc_logo_white_png.png" alt="Weboldal ikonja">
+                            </div>
+                            <div class="project-details">
+                                <h4><b>WESOC</b></h4>
+                                <div class="technologies">
+                                    <img src="img/laravel.png" alt="HTML ikon">
+                                    <img src="img/bootstrap.png" alt="Bootstrap ikon">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    </li>
+                        <li> 
+                            <a href="https://www.emmatsoka.site/playstation.github.io/" target="_blank">
+                            <div class="projectbox">
+                            <div class="project-icon">
+                                <img src="img/ps1web.png" alt="Weboldal ikonja">
+                            </div>
+                            <div class="project-details">
+                                <h4><b>PS1</b></h4>
+                                <div class="technologies">
+                                    <img src="img/html.webp" alt="HTML ikon">
+                                    <img src="img/css.png" alt="CSS ikon">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        </a>
+                    </li>
+                        <li> 
+                            <a href="http://hemonaplo.hu/" target="_blank">
+                            <div class="projectbox">
+                            <div class="project-icon">
+                                <img src="img/hemonaplo.png" alt="Weboldal ikonja">
+                            </div>
+                            <div class="project-details">
+                                <h4><b><span class="kek">Hemonapló</span></b></h4>
+                                <div class="technologies">
+                                    <img src="img/wordpress.png" alt="Wordpress ikon">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        </a>    
+                    </li>
+                    <li> 
+                        <a href="https://sulihazi.github.io/egeszsegeseletmod.github.io/" target="_blank">
+                        <div class="projectbox">
+                        <div class="project-icon">
+                            <img src="img/egmodlogo.png" alt="Weboldal ikonja">
+                        </div>
+                        <div class="project-details">
+                            <h4><b>Egmód</b></h4>
+                            <div class="technologies">
+                                <img src="img/html.webp" alt="HTML ikon">
+                                <img src="img/css.png" alt="CSS ikon">
+                                <img src="img/bootstrap.png" alt="Bootstrap ikon">
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </a>    
+                </li>
+                      </ul>
+                        
+                    </div>
+                </div>
+            </div>
+  
+        <script>
+       const boxes = document.querySelectorAll('.box');
+const background = document.querySelector('.hatter');
+
+// Mozgatási értékek inicializálása
+let mouseX = 0;
+let mouseY = 0;
+let isMouseOver = false;
+
+document.addEventListener('mousemove', (e) => {
+    // Ne mozgassuk a dobozokat mobil eszközökön
+    if (window.innerWidth < 768) return;
+
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+
+    if (isMouseOver) {
+        moveElements();
+    }
+});
+
+document.addEventListener('mouseleave', () => {
+    isMouseOver = false;
+    resetElements();
+});
+
+document.addEventListener('mouseenter', () => {
+    isMouseOver = true;
+    moveElements();
+});
+
+// Elemek mozgatása (dobozok és háttér)
+function moveElements() {
+    boxes.forEach(box => {
+        const boxX = box.offsetLeft + (box.offsetWidth / 2);
+        const boxY = box.offsetTop + (box.offsetHeight / 2);
+
+        const distanceX = (mouseX - boxX) / 20;
+        const distanceY = (mouseY - boxY) / 20;
+
+        box.style.transition = 'transform 0.3s ease';
+        box.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
+    });
+
+    // Háttér mozgatása ellentétes irányba
+    const bgDistanceX = -(mouseX - window.innerWidth / 2) / 40;
+    const bgDistanceY = -(mouseY - window.innerHeight / 2) / 40;
+    background.style.transition = 'transform 0.3s ease';
+    background.style.transform = `translate(${bgDistanceX}px, ${bgDistanceY}px)`;
+}
+
+// Visszaállítás lassú animációval
+function resetElements() {
+    boxes.forEach(box => {
+        box.style.transition = 'transform 0.3s ease';
+        box.style.transform = 'translate(0, 0)';
+    });
+
+    background.style.transition = 'transform 0.3s ease';
+    background.style.transform = 'translate(0, 0)';
+}
+
+// Visszaállítás az oldal betöltésekor vagy méretváltáskor
+window.addEventListener('resize', () => {
+    resetElements();
+});
+
+// Indítjuk az animációt
+animateElements();
+
+function animateElements() {
+    moveElements();
+    requestAnimationFrame(animateElements);
+}
+
+        </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

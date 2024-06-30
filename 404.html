@@ -6,22 +6,109 @@
         </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, height=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/style.css">
         <meta property="og:title" content="YAUKO | Készülőben..">
         <link rel="icon" href="icon.png" type="image">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
     </head>
-    <body>
-      <main>
+    <body id="negyszaznegy">
+      <div class="hatter-container">
+        <div class="hatter"></div>
+    </div>
+    <div class="container mt-5">
+      <div class="row ">
         <div class="tartalom">
             <div class="egesz">
-        <h1>Ez az oldal nem létezik..</h1>
+  
 
             <ul class="gombok">
-              <li><a href="/index" class="gomb">Vissza a fooldalra</a></li>
+             
             </ul>
         </div>
         </div>
-      </main>
+        <div class="col-md-5">
+          <div class="box mb-4">
+              <h4><b>Ez az oldal nem létezik.</b></h4>
+              <p> <a href="https://www.emmatsoka.site/" class="gomb">Vissza a fooldalra</a></p>
+          </div>
+      </div>
+      </div>
+    </div>
+      <script>
+        const boxes = document.querySelectorAll('.box');
+ const background = document.querySelector('.hatter');
+ 
+ // Mozgatási értékek inicializálása
+ let mouseX = 0;
+ let mouseY = 0;
+ let isMouseOver = false;
+ 
+ document.addEventListener('mousemove', (e) => {
+     // Ne mozgassuk a dobozokat mobil eszközökön
+     if (window.innerWidth < 768) return;
+ 
+     mouseX = e.pageX;
+     mouseY = e.pageY;
+ 
+     if (isMouseOver) {
+         moveElements();
+     }
+ });
+ 
+ document.addEventListener('mouseleave', () => {
+     isMouseOver = false;
+     resetElements();
+ });
+ 
+ document.addEventListener('mouseenter', () => {
+     isMouseOver = true;
+     moveElements();
+ });
+ 
+ // Elemek mozgatása (dobozok és háttér)
+ function moveElements() {
+     boxes.forEach(box => {
+         const boxX = box.offsetLeft + (box.offsetWidth / 2);
+         const boxY = box.offsetTop + (box.offsetHeight / 2);
+ 
+         const distanceX = (mouseX - boxX) / 20;
+         const distanceY = (mouseY - boxY) / 20;
+ 
+         box.style.transition = 'transform 0.3s ease';
+         box.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
+     });
+ 
+     // Háttér mozgatása ellentétes irányba
+     const bgDistanceX = -(mouseX - window.innerWidth / 2) / 40;
+     const bgDistanceY = -(mouseY - window.innerHeight / 2) / 40;
+     background.style.transition = 'transform 0.3s ease';
+     background.style.transform = `translate(${bgDistanceX}px, ${bgDistanceY}px)`;
+ }
+ 
+ // Visszaállítás lassú animációval
+ function resetElements() {
+     boxes.forEach(box => {
+         box.style.transition = 'transform 0.3s ease';
+         box.style.transform = 'translate(0, 0)';
+     });
+ 
+     background.style.transition = 'transform 0.3s ease';
+     background.style.transform = 'translate(0, 0)';
+ }
+ 
+ // Visszaállítás az oldal betöltésekor vagy méretváltáskor
+ window.addEventListener('resize', () => {
+     resetElements();
+ });
+ 
+ // Indítjuk az animációt
+ animateElements();
+ 
+ function animateElements() {
+     moveElements();
+     requestAnimationFrame(animateElements);
+ }
+ 
+         </script>
     </body>
 </html>
