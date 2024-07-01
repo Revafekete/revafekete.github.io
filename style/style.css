@@ -318,3 +318,37 @@ strike{
   ::-webkit-scrollbar-thumb:hover {
     background: #242424;
   }
+
+
+  p{
+    margin-bottom: 10px !important;
+  }
+
+  .bmc-btn {
+    border: 0.5mm solid #37383f6e !important;
+    margin-top: 10px;
+    min-width: 150px !important;
+    color: #000000;
+    background-color: #7b7b7b71 !important;
+    height: 60px;
+    border-radius: 20px !important;
+    font-size: 28px;
+    font-weight: Normal;
+   
+    padding: 0px 24px;
+    line-height: 27px;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center;
+    font-family: 'Cookie', cursive !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+.bmc-btn:hover {
+    filter: brightness(140%);
+    -webkit-filter: brightness(140%);
+}
