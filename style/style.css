@@ -263,3 +263,32 @@ strike{
         margin-bottom: 100px;
     }
 }
+
+
+.contacts {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    margin: 0 auto !important;
+}
+
+.contacts li {
+    margin: 0 auto;
+    transition: 0.3s all;
+
+}
+.contacts li:hover {
+    transition: 0.3s all;
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+.contacts img {
+    width: 20px; /* Állítsd be az ikon méretét az igényeid szerint */
+    height: auto;
+}
