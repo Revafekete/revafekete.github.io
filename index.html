@@ -36,8 +36,23 @@
                 <div class="col-md-5">
                     <div class="box mb-4">
                         <h4><b>Bemutatkozás.</b></h4>
-                        <p>Üdv! Emma vagyok, webdesigner és szoftverfejlesztő. Gödöllőn élek, és nemrég fejeztem be a szoftverfejlesztő szakot, ahol 79%-os eredménnyel végeztem. Jelenleg webdesign és fejlesztés terén tevékenykedem, és mindig keresem az új lehetőségeket a fejlődésre és tanulásra. Szenvedélyesen szeretem a dizájnolást és az új technológiák felfedezését. Ha egy elhivatott és kreatív webdesignert keresel, ne habozz kapcsolatba lépni velem!</p>
+                        <p id="typing"></p>
 
+                        <script>
+                            const text = "Üdv! Emma vagyok, webdesigner és szoftverfejlesztő. Gödöllőn élek, és nemrég fejeztem be a szoftverfejlesztő szakot, ahol 79%-os eredménnyel végeztem. Jelenleg webdesign és fejlesztés terén tevékenykedem, és mindig keresem az új lehetőségeket a fejlődésre és tanulásra. Szenvedélyesen szeretem a dizájnolást és az új technológiák felfedezését. Ha egy elhivatott és kreatív webdesignert keresel, ne habozz kapcsolatba lépni velem!";
+                            let index = 0;
+                            const speed = 50; // A sebesség milliszekundumban
+                    
+                            function typeWriter() {
+                                if (index < text.length) {
+                                    document.getElementById("typing").innerHTML += text.charAt(index);
+                                    index++;
+                                    setTimeout(typeWriter, speed);
+                                }
+                            }
+                    
+                            document.addEventListener("DOMContentLoaded", typeWriter);
+                        </script>
                     </div>
                 </div>
                 <div class="col-md-3">
