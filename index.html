@@ -128,18 +128,14 @@
             </div>
   
         <script>
-  const boxes = document.querySelectorAll('.box');
+ const boxes = document.querySelectorAll('.box');
 const background = document.querySelector('.hatter');
 
-// Mozgatási értékek inicializálása
 let mouseX = 0;
 let mouseY = 0;
 let isMouseOver = false;
 
 document.addEventListener('mousemove', (e) => {
-    // Ne mozgassuk a dobozokat mobil eszközökön
-    if (window.innerWidth < 768) return; // Itt a 768 pixel a küszöbérték
-
     mouseX = e.pageX;
     mouseY = e.pageY;
 
@@ -158,7 +154,6 @@ document.addEventListener('mouseenter', () => {
     moveElements();
 });
 
-// Elemek mozgatása (dobozok és háttér)
 function moveElements() {
     boxes.forEach(box => {
         const boxX = box.offsetLeft + (box.offsetWidth / 2);
@@ -171,14 +166,12 @@ function moveElements() {
         box.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
     });
 
-    // Háttér mozgatása ellentétes irányba
     const bgDistanceX = -(mouseX - window.innerWidth / 2) / 40;
     const bgDistanceY = -(mouseY - window.innerHeight / 2) / 40;
     background.style.transition = 'transform 0.3s ease';
     background.style.transform = `translate(${bgDistanceX}px, ${bgDistanceY}px)`;
 }
 
-// Visszaállítás lassú animációval
 function resetElements() {
     boxes.forEach(box => {
         box.style.transition = 'transform 0.3s ease';
@@ -189,17 +182,11 @@ function resetElements() {
     background.style.transform = 'translate(0, 0)';
 }
 
-// Visszaállítás az oldal betöltésekor vagy méretváltáskor
 window.addEventListener('resize', () => {
-    if (window.innerWidth < 768) {
-        resetElements(); // Ha mobil eszköz, visszaállítjuk az elemeket
-    }
+    resetElements();
 });
 
-// Indítjuk az animációt, de csak nagyobb képernyőn
-if (window.innerWidth >= 768) {
-    animateElements();
-}
+animateElements();
 
 function animateElements() {
     moveElements();
