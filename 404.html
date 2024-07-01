@@ -34,81 +34,74 @@
       </div>
       </div>
     </div>
-      <script>
-        const boxes = document.querySelectorAll('.box');
- const background = document.querySelector('.hatter');
- 
- // Mozgatási értékek inicializálása
- let mouseX = 0;
- let mouseY = 0;
- let isMouseOver = false;
- 
- document.addEventListener('mousemove', (e) => {
-     // Ne mozgassuk a dobozokat mobil eszközökön
-     if (window.innerWidth < 768) return;
- 
-     mouseX = e.pageX;
-     mouseY = e.pageY;
- 
-     if (isMouseOver) {
-         moveElements();
-     }
- });
- 
- document.addEventListener('mouseleave', () => {
-     isMouseOver = false;
-     resetElements();
- });
- 
- document.addEventListener('mouseenter', () => {
-     isMouseOver = true;
-     moveElements();
- });
- 
- // Elemek mozgatása (dobozok és háttér)
- function moveElements() {
-     boxes.forEach(box => {
-         const boxX = box.offsetLeft + (box.offsetWidth / 2);
-         const boxY = box.offsetTop + (box.offsetHeight / 2);
- 
-         const distanceX = (mouseX - boxX) / 20;
-         const distanceY = (mouseY - boxY) / 20;
- 
-         box.style.transition = 'transform 0.3s ease';
-         box.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
-     });
- 
-     // Háttér mozgatása ellentétes irányba
-     const bgDistanceX = -(mouseX - window.innerWidth / 2) / 40;
-     const bgDistanceY = -(mouseY - window.innerHeight / 2) / 40;
-     background.style.transition = 'transform 0.3s ease';
-     background.style.transform = `translate(${bgDistanceX}px, ${bgDistanceY}px)`;
- }
- 
- // Visszaállítás lassú animációval
- function resetElements() {
-     boxes.forEach(box => {
-         box.style.transition = 'transform 0.3s ease';
-         box.style.transform = 'translate(0, 0)';
-     });
- 
-     background.style.transition = 'transform 0.3s ease';
-     background.style.transform = 'translate(0, 0)';
- }
- 
- // Visszaállítás az oldal betöltésekor vagy méretváltáskor
- window.addEventListener('resize', () => {
-     resetElements();
- });
- 
- // Indítjuk az animációt
- animateElements();
- 
- function animateElements() {
-     moveElements();
-     requestAnimationFrame(animateElements);
- }
- 
-         </script>
+    <script>
+      const boxes = document.querySelectorAll('.box');
+      const background = document.querySelector('.hatter');
+      
+      let mouseX = 0;
+      let mouseY = 0;
+      let isMouseOver = false;
+      
+      document.addEventListener('mousemove', (e) => {
+          mouseX = e.pageX;
+          mouseY = e.pageY;
+      
+          if (isMouseOver) {
+              moveElements();
+          }
+      });
+      
+      document.addEventListener('mouseleave', () => {
+          isMouseOver = false;
+          resetElementsWithAnimation();
+      });
+      
+      document.addEventListener('mouseenter', () => {
+          isMouseOver = true;
+          moveElements();
+      });
+      
+      function moveElements() {
+          if (!isMouseOver) return; 
+      
+          boxes.forEach(box => {
+              const boxX = box.offsetLeft + (box.offsetWidth / 2);
+              const boxY = box.offsetTop + (box.offsetHeight / 2);
+      
+              const distanceX = (mouseX - boxX) / 20;
+              const distanceY = (mouseY - boxY) / 20;
+      
+              box.style.transition = 'transform 0.3s ease';
+              box.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
+          });
+      
+          const bgDistanceX = -(mouseX - window.innerWidth / 2) / 40;
+          const bgDistanceY = -(mouseY - window.innerHeight / 2) / 40;
+          background.style.transition = 'transform 0.3s ease';
+          background.style.transform = `translate(${bgDistanceX}px, ${bgDistanceY}px)`;
+      }
+      
+      function resetElementsWithAnimation() {
+          boxes.forEach(box => {
+              box.style.transition = 'transform 0.3s ease';
+              box.style.transform = 'translate(0, 0)';
+          });
+      
+          background.style.transition = 'transform 0.3s ease';
+          background.style.transform = 'translate(0, 0)';
+      }
+      
+      window.addEventListener('resize', () => {
+          resetElementsWithAnimation();
+      });
+      
+      animateElements();
+      
+      function animateElements() {
+          moveElements();
+          requestAnimationFrame(animateElements);
+      }
+      
+              </script>
     </body>
 </html>
