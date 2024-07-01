@@ -128,7 +128,7 @@
             </div>
   
         <script>
- const boxes = document.querySelectorAll('.box');
+const boxes = document.querySelectorAll('.box');
 const background = document.querySelector('.hatter');
 
 let mouseX = 0;
@@ -146,7 +146,7 @@ document.addEventListener('mousemove', (e) => {
 
 document.addEventListener('mouseleave', () => {
     isMouseOver = false;
-    resetElements();
+    resetElementsWithAnimation();
 });
 
 document.addEventListener('mouseenter', () => {
@@ -155,6 +155,8 @@ document.addEventListener('mouseenter', () => {
 });
 
 function moveElements() {
+    if (!isMouseOver) return; // Ne mozgassuk az elemeket, ha az egér nincs az oldalon
+
     boxes.forEach(box => {
         const boxX = box.offsetLeft + (box.offsetWidth / 2);
         const boxY = box.offsetTop + (box.offsetHeight / 2);
@@ -172,7 +174,7 @@ function moveElements() {
     background.style.transform = `translate(${bgDistanceX}px, ${bgDistanceY}px)`;
 }
 
-function resetElements() {
+function resetElementsWithAnimation() {
     boxes.forEach(box => {
         box.style.transition = 'transform 0.3s ease';
         box.style.transform = 'translate(0, 0)';
@@ -183,7 +185,7 @@ function resetElements() {
 }
 
 window.addEventListener('resize', () => {
-    resetElements();
+    resetElementsWithAnimation();
 });
 
 animateElements();
