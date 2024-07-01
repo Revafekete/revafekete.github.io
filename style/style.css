@@ -1,4 +1,10 @@
-
+*{
+    transition: 0.3s all !important;
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
+}
 body{
     background-color: rgb(20, 20, 22);
     color: rgba(230, 230, 230, 0.863);
@@ -292,3 +298,23 @@ strike{
     width: 20px; /* Állítsd be az ikon méretét az igényeid szerint */
     height: auto;
 }
+
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #1d1d1d;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #333333;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #242424;
+  }
