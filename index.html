@@ -16,7 +16,7 @@
         <div class="hatter-container">
             <div class="hatter"></div>
         </div>
-        <div class="container mt-5">
+        <div class="container mt-5 justify-content-center">
             <div class="row ">
                 <div class="col-md-3">
                     <div class="box">
@@ -128,7 +128,7 @@
             </div>
   
         <script>
-       const boxes = document.querySelectorAll('.box');
+  const boxes = document.querySelectorAll('.box');
 const background = document.querySelector('.hatter');
 
 // Mozgatási értékek inicializálása
@@ -138,7 +138,7 @@ let isMouseOver = false;
 
 document.addEventListener('mousemove', (e) => {
     // Ne mozgassuk a dobozokat mobil eszközökön
-    if (window.innerWidth < 768) return;
+    if (window.innerWidth < 768) return; // Itt a 768 pixel a küszöbérték
 
     mouseX = e.pageX;
     mouseY = e.pageY;
@@ -191,11 +191,15 @@ function resetElements() {
 
 // Visszaállítás az oldal betöltésekor vagy méretváltáskor
 window.addEventListener('resize', () => {
-    resetElements();
+    if (window.innerWidth < 768) {
+        resetElements(); // Ha mobil eszköz, visszaállítjuk az elemeket
+    }
 });
 
-// Indítjuk az animációt
-animateElements();
+// Indítjuk az animációt, de csak nagyobb képernyőn
+if (window.innerWidth >= 768) {
+    animateElements();
+}
 
 function animateElements() {
     moveElements();

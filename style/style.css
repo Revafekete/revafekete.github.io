@@ -248,3 +248,17 @@ strike{
     text-decoration: none !important;
     color: rgba(230, 230, 230, 0.863);
 }
+@media only screen and (max-width: 1000px) {
+    .box{
+        max-width: 80% !important;
+    }
+    #projektek{
+        max-width: 90% !important;
+    }
+    #projektek #minibox-container{
+        text-align: center;
+    }
+    #projektek{
+        margin-bottom: 100px;
+    }
+}
