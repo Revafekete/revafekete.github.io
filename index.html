@@ -176,74 +176,85 @@
                 </div>
             </div>
  
-        <script>
-    const boxes = document.querySelectorAll('.box');
-      const background = document.querySelector('.hatter');
-      
-      let mouseX = 0;
-      let mouseY = 0;
-      let isMouseOver = false;
-      
-      document.addEventListener('mousemove', (e) => {
-          mouseX = e.pageX;
-          mouseY = e.pageY;
-      
-          if (isMouseOver) {
-              moveElements();
-          }
-      });
-      
-      document.addEventListener('mouseleave', () => {
-          isMouseOver = false;
-          resetElementsWithAnimation();
-      });
-      
-      document.addEventListener('mouseenter', () => {
-          isMouseOver = true;
-          moveElements();
-      });
-      
-      function moveElements() {
-          if (!isMouseOver) return; 
-      
-          boxes.forEach(box => {
-              const boxX = box.offsetLeft + (box.offsetWidth / 2);
-              const boxY = box.offsetTop + (box.offsetHeight / 2);
-      
-              const distanceX = (mouseX - boxX) / 20;
-              const distanceY = (mouseY - boxY) / 20;
-      
-              box.style.transition = 'transform 0.3s ease';
-              box.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
-          });
-      
-          const bgDistanceX = -(mouseX - window.innerWidth / 2) / 40;
-          const bgDistanceY = -(mouseY - window.innerHeight / 2) / 40;
-          background.style.transition = 'transform 0.3s ease';
-          background.style.transform = `translate(${bgDistanceX}px, ${bgDistanceY}px)`;
-      }
-      
-      function resetElementsWithAnimation() {
-          boxes.forEach(box => {
-              box.style.transition = 'transform 0.3s ease';
-              box.style.transform = 'translate(0, 0)';
-          });
-      
-          background.style.transition = 'transform 0.3s ease';
-          background.style.transform = 'translate(0, 0)';
-      }
-      
-      window.addEventListener('resize', () => {
-          resetElementsWithAnimation();
-      });
-      
-      animateElements();
-      
-      function animateElements() {
-          moveElements();
-          requestAnimationFrame(animateElements);
-      }
-        </script>
+            <script>
+                const boxes = document.querySelectorAll('.box');
+                const background = document.querySelector('.hatter');
+                
+                let mouseX = 0;
+                let mouseY = 0;
+                let isMouseOver = false;
+            
+                const minScreenWidth = 768;
+            
+                if (window.innerWidth > minScreenWidth) {
+                    document.addEventListener('mousemove', (e) => {
+                        mouseX = e.pageX;
+                        mouseY = e.pageY;
+                    
+                        if (isMouseOver) {
+                            moveElements();
+                        }
+                    });
+                    
+                    document.addEventListener('mouseleave', () => {
+                        isMouseOver = false;
+                        resetElementsWithAnimation();
+                    });
+                    
+                    document.addEventListener('mouseenter', () => {
+                        isMouseOver = true;
+                        moveElements();
+                    });
+                    
+                    function moveElements() {
+                        if (!isMouseOver) return; 
+                    
+                        boxes.forEach(box => {
+                            const boxX = box.offsetLeft + (box.offsetWidth / 2);
+                            const boxY = box.offsetTop + (box.offsetHeight / 2);
+                    
+                            const distanceX = (mouseX - boxX) / 20;
+                            const distanceY = (mouseY - boxY) / 20;
+                    
+                            box.style.transition = 'transform 0.3s ease';
+                            box.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
+                        });
+                    
+                        const bgDistanceX = -(mouseX - window.innerWidth / 2) / 40;
+                        const bgDistanceY = -(mouseY - window.innerHeight / 2) / 40;
+                        background.style.transition = 'transform 0.3s ease';
+                        background.style.transform = `translate(${bgDistanceX}px, ${bgDistanceY}px)`;
+                    }
+                    
+                    function resetElementsWithAnimation() {
+                        boxes.forEach(box => {
+                            box.style.transition = 'transform 0.3s ease';
+                            box.style.transform = 'translate(0, 0)';
+                        });
+                    
+                        background.style.transition = 'transform 0.3s ease';
+                        background.style.transform = 'translate(0, 0)';
+                    }
+                    
+                    window.addEventListener('resize', () => {
+                        if (window.innerWidth <= minScreenWidth) {
+                            resetElementsWithAnimation();
+                        } else {
+                            moveElements();
+                        }
+                    });
+                    
+                    animateElements();
+                    
+                    function animateElements() {
+                        if (window.innerWidth > minScreenWidth) {
+                            moveElements();
+                        }
+                        requestAnimationFrame(animateElements);
+                    }
+                }
+            </script>
+            
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
