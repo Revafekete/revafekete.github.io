@@ -93,9 +93,7 @@ h4{
     height: 25px;
     width: auto;
 }
-#ismeretek{
-    max-width: 400px;
-}
+
 #ismeretek .col{
  
     text-align: center !important;
@@ -166,7 +164,7 @@ strike{
     }
    
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1198px) {
     .box{
         width: 80% !important;
         text-align: center;
@@ -264,8 +262,14 @@ strike{
     margin-right: 2px;
 }
 
-#projektek{
-    max-width: fit-content !important;
+
+@media only screen and (min-width: 1198px) {
+    #projektek{
+        max-width: fit-content !important;
+    }
+    #ismeretek{
+        max-width: 400px;
+    }
 }
 #minibox-container{
  
@@ -279,9 +283,15 @@ strike{
     text-decoration: none !important;
     color: rgba(255, 255, 255, 0.918);
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1198px) {
     .contacts{
         margin-top: 20px !important;
+    }
+    .projectbox {
+        width: 35vw !important;
+    }
+    #ismeretek{
+        width: 80% !important;
     }
     .box{
         width: 80% !important;
@@ -360,7 +370,7 @@ strike{
     width: 20px; /* Állítsd be az ikon méretét az igényeid szerint */
     height: auto;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1198px) {
     .contacts{
         margin-top: 20px !important;
     }
