@@ -15,8 +15,7 @@ body{
     background-color: var(--hatterszin);
     color: var(--betuszin);
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif !important   ;
-    
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 .hatter-container {
     position: fixed;
@@ -27,7 +26,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    pointer-events: none; /* To allow interaction with content */
+    pointer-events: none;
 }
 
 .hatter {
@@ -39,8 +38,8 @@ body{
     width: 70%;
     border-radius: 30px;
     box-shadow: 0 0 150px #000000e3;
-    pointer-events: auto; /* To allow interaction with the element itself */
-    transition: transform 0.3s ease; /* Add transition for smooth movement */
+    pointer-events: auto;
+    transition: transform 0.3s ease; 
 }
 
 .box{
@@ -61,6 +60,7 @@ body{
    
   
 }
+
 .minibox{
     width: fit-content;
     padding: 15px;
