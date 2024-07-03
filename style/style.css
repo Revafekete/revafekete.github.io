@@ -5,9 +5,15 @@
     -ms-transition: 0.3s all !important;
     -o-transition: 0.3s all !important;
 }
+
+:root{
+    --hatterszin:rgb(20, 20, 22);
+    --betuszin:rgba(255, 255, 255, 0.966);
+}
+
 body{
-    background-color: rgb(20, 20, 22);
-    color: rgba(230, 230, 230, 0.863);
+    background-color: var(--hatterszin);
+    color: var(--betuszin);
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif !important   ;
     
