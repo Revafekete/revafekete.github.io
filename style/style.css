@@ -444,7 +444,6 @@ strike{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none;
     background-color: rgb(22 22 24);
     border: 0.5mm solid #37383f6e !important;
     color: white;
@@ -457,14 +456,22 @@ strike{
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    transition: 0.3s all !important;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
 }
 #gorgessfel:hover {
     filter: brightness(140%);
     transition: 0.3s all !important;
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
 }
-@media (max-width: 1180px) { /* Csak mobilon */
-    #gorgessfel {
-        display: block;
-    }
+#gorgessfel.visible {
+    opacity: 1 !important;
+
 }
