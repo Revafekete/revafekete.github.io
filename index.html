@@ -34,17 +34,14 @@
             async function setLanguage() {
                 try {
                     const userLang = navigator.language || navigator.userLanguage;
-                    console.log(userLang)
+    
                     if (userLang.startsWith('hu')) {
                         document.documentElement.lang = 'hu';
                         document.getElementById('fullname').innerHTML = 'Szanyi Emma 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
                         document.getElementById('knowledges').innerHTML = 'Ismeretek.';
                         document.getElementById('introduction').innerHTML = 'Bemutatkozás 👋 ';
                         document.getElementById("bymc").setAttribute("data-text", "Támogass");
-                        document.getElementById('support').innerHTML = '<h4>Támogatás.</h4';
-                        addScript('Támogass');
-                           
-
+                        document.getElementById('support').innerHTML = 'Támogatás. ';
                         document.getElementById('projects').innerHTML = 'Projektek.';
                         document.getElementById('contr').innerHTML = ' saját / <span class="kek">résztvevő</span>';
                         
@@ -53,10 +50,8 @@
                         document.getElementById('fullname').innerHTML = 'Emma Szanyi 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
                         document.getElementById('knowledges').innerHTML = 'Knowledges.';
                         document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
-                       document.getElementById('support').innerHTML = '<h4>Support.</h4';
-                        addScript('Support');
-                            
-
+                        document.getElementById('support').innerHTML = 'Support me. ';
+                        document.getElementById("bymc").setAttribute("data-text", "Support");
                         document.getElementById('projects').innerHTML = 'Projects. (Hungarian)';
                         document.getElementById('contr').innerHTML = ' own / <span class="kek">contributor</span>';
 
@@ -64,33 +59,7 @@
                 } catch (error) {
                     console.error('Error fetching geolocation data:', error);
                 }
-                
-                function addScript(buttonText) {
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js';
-    script.setAttribute('data-name', 'bmc-button');
-    script.setAttribute('data-slug', 'emmaszanyiq');
-    script.setAttribute('data-color', 'rgba(20, 20, 22, 0.527)');
-    script.setAttribute('data-emoji', '');
-    script.setAttribute('data-font', 'Cookie');
-    script.setAttribute('data-text', buttonText);
-    script.setAttribute('data-outline-color', '#ffffff');
-    script.setAttribute('data-font-color', '#ffffff');
-    script.setAttribute('data-coffee-color', '#ffffff');
-
-    // Hozzáadás a DOM-hoz, amikor a script betöltődött
-    script.onload = function() {
-        document.getElementById('support').appendChild(script);
-    };
-
-    // Hibakezelés
-    script.onerror = function(error) {
-        console.error('Error loading script:', error);
-    };
-
-    document.body.appendChild(script); // A script hozzáadása a body-hoz
-}
+            }
     
             document.addEventListener('DOMContentLoaded', setLanguage);
         </script>
@@ -173,9 +142,9 @@
                     </div>
                 </div>
                 <div class="col-xl-3">
-                    <div class="box mb-2" id="support">
-                        <h4 >Támogatás.</h4>
-                        <script id="bymc" type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="emmaszanyiq" data-color="rgba(20, 20, 22, 0.527)" data-emoji=""  data-font="Cookie" data-text="Támogass" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#ffffff" ></script>
+                    <div class="box mb-2" >
+                        <h4 id="support">Támogatás.</h4>
+                        <script id="bymc" type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="emmaszanyiq" data-color="rgba(20, 20, 22, 0.527)" data-emoji=""  data-font="Cookie" data-text="buymeacoffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#ffffff" ></script>
                     </div>
                 </div>
                     <div class="col-xl-5">
