@@ -36,26 +36,81 @@
                     const userLang = navigator.language || navigator.userLanguage;
     
                     if (userLang.startsWith('hu')) {
-                        document.documentElement.lang = 'hu';
-                        document.getElementById('fullname').innerHTML = 'Szanyi Emma 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
-                        document.getElementById('knowledges').innerHTML = 'Ismeretek.';
-                        document.getElementById('introduction').innerHTML = 'Bemutatkozás 👋 ';
-                        document.getElementById("bymc").setAttribute("data-text", "Támogass");
-                        document.getElementById('support').innerHTML = 'Támogatás. ';
-                        document.getElementById('projects').innerHTML = 'Projektek.';
-                        document.getElementById('contr').innerHTML = ' saját / <span class="kek">résztvevő</span>';
-                        
-                    } else {
-                        document.documentElement.lang = 'en';
-                        document.getElementById('fullname').innerHTML = 'Emma Szanyi 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
-                        document.getElementById('knowledges').innerHTML = 'Knowledges.';
-                        document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
-                        document.getElementById('support').innerHTML = 'Support me. ';
-                        document.getElementById("bymc").setAttribute("data-text", "Support");
-                        document.getElementById('projects').innerHTML = 'Projects. (Hungarian)';
-                        document.getElementById('contr').innerHTML = ' own / <span class="kek">contributor</span>';
+            document.documentElement.lang = 'hu';
+            document.getElementById('fullname').innerHTML = 'Szanyi Emma 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
+            document.getElementById('knowledges').innerHTML = 'Ismeretek.';
+            document.getElementById('introduction').innerHTML = 'Bemutatkozás 👋 ';
+            document.getElementById('support').innerHTML = 'Támogatás. ';
+            document.getElementById('projects').innerHTML = 'Projektek.';
+            document.getElementById('contr').innerHTML = ' saját / <span class="kek">résztvevő</span>';
 
-                    }
+        } else if (userLang.startsWith('de')) {
+            document.documentElement.lang = 'de';
+            document.getElementById('fullname').innerHTML = 'Emma Szanyi 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
+            document.getElementById('knowledges').innerHTML = 'Kenntnisse.';
+            document.getElementById('introduction').innerHTML = 'Einführung 👋 ';
+            document.getElementById('support').innerHTML = 'Unterstütze mich. ';
+            document.getElementById('projects').innerHTML = 'Projekte.';
+            document.getElementById('contr').innerHTML = ' eigen / <span class="kek">Mitwirkender</span>';
+
+        } else if (userLang.startsWith('fr')) {
+            document.documentElement.lang = 'fr';
+            document.getElementById('fullname').innerHTML = 'Emma Szanyi 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
+            document.getElementById('knowledges').innerHTML = 'Connaissances.';
+            document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
+            document.getElementById('support').innerHTML = 'Soutenez-moi. ';
+            document.getElementById('projects').innerHTML = 'Projets.';
+            document.getElementById('contr').innerHTML = ' propre / <span class="kek">contributeur</span>';
+
+        } else if (userLang.startsWith('ja')) {
+            document.documentElement.lang = 'ja';
+            document.getElementById('fullname').innerHTML = 'エマ・ザンニ 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
+            document.getElementById('knowledges').innerHTML = '知識.';
+            document.getElementById('introduction').innerHTML = '自己紹介 👋 ';
+            document.getElementById('support').innerHTML = 'サポートしてください。';
+            document.getElementById("bymc").setAttribute("data-text", "サポート");
+            document.getElementById('projects').innerHTML = 'プロジェクト。';
+            document.getElementById('contr').innerHTML = ' 自分 / <span class="kek">貢献者</span>';
+
+        } else if (userLang.startsWith('zh')) {
+            document.documentElement.lang = 'zh';
+            document.getElementById('fullname').innerHTML = '艾玛·赞尼 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
+            document.getElementById('knowledges').innerHTML = '知识.';
+            document.getElementById('introduction').innerHTML = '介绍 👋 ';
+            document.getElementById('support').innerHTML = '支持我。';
+            document.getElementById("bymc").setAttribute("data-text", "支持");
+            document.getElementById('projects').innerHTML = '项目。';
+            document.getElementById('contr').innerHTML = ' 自己 / <span class="kek">贡献者</span>';
+
+        } else if (userLang.startsWith('ru')) {
+            document.documentElement.lang = 'ru';
+            document.getElementById('fullname').innerHTML = 'Эмма Сани 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
+            document.getElementById('knowledges').innerHTML = 'Знания.';
+            document.getElementById('introduction').innerHTML = 'Введение 👋 ';
+            document.getElementById('support').innerHTML = 'Поддержи меня.';
+            document.getElementById("bymc").setAttribute("data-text", "Поддержать");
+            document.getElementById('projects').innerHTML = 'Проекты.';
+            document.getElementById('contr').innerHTML = ' свой / <span class="kek">участник</span>';
+
+        } else if (userLang.startsWith('es')) {
+            document.documentElement.lang = 'es';
+            document.getElementById('fullname').innerHTML = 'Emma Szanyi 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
+            document.getElementById('knowledges').innerHTML = 'Conocimientos.';
+            document.getElementById('introduction').innerHTML = 'Introducción 👋 ';
+            document.getElementById('support').innerHTML = 'Apóyame. ';
+            document.getElementById("bymc").setAttribute("data-text", "Apoyar");
+            document.getElementById('projects').innerHTML = 'Proyectos.';
+            document.getElementById('contr').innerHTML = ' propio / <span class="kek">contribuyente</span>';
+
+        } else { 
+            document.documentElement.lang = 'en';
+            document.getElementById('fullname').innerHTML = 'Emma Szanyi 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
+            document.getElementById('knowledges').innerHTML = 'Knowledges.';
+            document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
+            document.getElementById('support').innerHTML = 'Support me. ';
+            document.getElementById('projects').innerHTML = 'Projects. (Hungarian)';
+            document.getElementById('contr').innerHTML = ' own / <span class="kek">contributor</span>';
+        }
                 } catch (error) {
                     console.error('Error fetching geolocation data:', error);
                 }
@@ -114,6 +169,49 @@
                                                "terén tevékenykedem, és mindig keresem az új lehetőségeket a " +
                                                "fejlődésre és tanulásra. Szenvedélyesen szeretem a dizájnolást " +
                                                "és az új technológiák felfedezését.";
+                                    } else if (userLang.startsWith('en')) {
+                                        text = "Hello! I'm Emma, a web designer and software developer. " +
+                                            "I live in Gödöllő (Hungary) and recently graduated from my software development " +
+                                            "course with a score of 79%. Currently, I work in web design and development, " +
+                                            "always looking for new opportunities to grow and learn. I'm passionate about " +
+                                            "design and exploring new technologies.";
+
+                                    } else if (userLang.startsWith('ja')) {
+                                        text = "こんにちは！私はエマです。ウェブデザイナーでソフトウェア開発者です。 " +
+                                            "ハンガリーのゴドッロに住んでいて、最近ソフトウェア開発コースを79%の成績で卒業しました。" +
+                                            "現在、ウェブデザインと開発に取り組んでおり、成長と学びの新しい機会を常に探しています。" +
+                                            "デザインと新しい技術の探求に情熱を持っています。";
+
+                                    } else if (userLang.startsWith('zh')) {
+                                        text = "你好！我是艾玛，一个网页设计师和软件开发者。 " +
+                                            "我住在匈牙利的戈多洛，最近以79%的成绩从软件开发课程毕业。" +
+                                            "目前，我从事网页设计和开发工作，总是寻找新的机会来成长和学习。" +
+                                            "我对设计和探索新技术充满热情。";
+
+                                    } else if (userLang.startsWith('ru')) {
+                                        text = "Привет! Я Эмма, веб-дизайнер и разработчик программного обеспечения. " +
+                                            "Я живу в Гёдёллё (Венгрия) и недавно закончила курс по разработке программного обеспечения с оценкой 79%. " +
+                                            "В настоящее время я работаю в области веб-дизайна и разработки, всегда ищу новые возможности для роста и обучения. " +
+                                            "Я увлечена дизайном и исследованием новых технологий.";
+
+                                    } else if (userLang.startsWith('es')) {
+                                        text = "¡Hola! Soy Emma, diseñadora web y desarrolladora de software. " +
+                                            "Vivo en Gödöllő (Hungría) y recientemente me gradué de mi curso de desarrollo de software con una puntuación del 79%. " +
+                                            "Actualmente trabajo en diseño y desarrollo web, siempre buscando nuevas oportunidades para crecer y aprender. " +
+                                            "Me apasiona el diseño y explorar nuevas tecnologías.";
+
+                                    } else if (userLang.startsWith('de')) {
+                                        text = "Hallo! Ich bin Emma, eine Webdesignerin und Softwareentwicklerin. " +
+                                            "Ich lebe in Gödöllő (Ungarn) und habe kürzlich meinen Softwareentwicklungs-Kurs mit 79% abgeschlossen. " +
+                                            "Derzeit arbeite ich im Webdesign und in der Entwicklung und suche immer nach neuen Möglichkeiten, zu wachsen und zu lernen. " +
+                                            "Ich bin leidenschaftlich an Design und der Erkundung neuer Technologien interessiert.";
+
+                                    } else if (userLang.startsWith('fr')) {
+                                        text = "Bonjour! Je suis Emma, designer web et développeuse de logiciels. " +
+                                            "Je vis à Gödöllő (Hongrie) et je viens de terminer mon cours de développement de logiciels avec une note de 79%. " +
+                                            "Actuellement, je travaille dans le design et le développement web, toujours à la recherche de nouvelles opportunités pour grandir et apprendre. " +
+                                            "Je suis passionnée par le design et l'exploration de nouvelles technologies.";
+
                                     } else { 
                                         text = "Hello! I'm Emma, a web designer and software developer. " +
                                                "I live in Gödöllő (Hungary) and recently graduated from my software development " +
