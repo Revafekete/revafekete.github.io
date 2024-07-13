@@ -29,6 +29,30 @@
             <link rel="shortcut icon" href="http://www.emmatsoka.site/img/trans.png"/>
         <link rel="icon" type="image/png" href="img/trans.png" sizes="60x60"/>
         <link rel="apple-touch-icon" sizes="60x60" href="http://www.emmatsoka.site/img/trans.png"/>
+
+        <script>
+            async function setLanguage() {
+                try {
+                    const response = await fetch('http://ip-api.com/json/');
+                    const data = await response.json();
+                    const country = data.countryCode;
+    
+                    if (country === 'HU') {
+                        document.documentElement.lang = 'hu';
+                        document.getElementById('fullname').innerText = 'Szanyi Emma';
+                        
+                    } else {
+                        document.documentElement.lang = 'en';
+                        document.getElementById('fullname').innerText = 'Emma Szanyi';
+                    }
+                } catch (error) {
+                    console.error('Error fetching geolocation data:', error);
+                }
+            }
+    
+            document.addEventListener('DOMContentLoaded', setLanguage);
+        </script>
+
     </head>
     <body>
         <div class="hatter-container">
@@ -41,7 +65,7 @@
                 <div class="col-xl-3">
                     <div class="box">
                         <img src="img/usr.jpg" alt="" id="profil">
-                        <p><b>Szanyi  Emma</b> 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span></p>
+                        <p id="fullname"><b>Szanyi  Emma</b> 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span></p>
                         <p>she/her | 19y<br>
                             <ul class="contacts">
                                 <li><a href="https://discord.com/users/455673984479002636" target="_blank" title="Discord"><img src="img/discord.webp" alt="Discord"></a></li>
