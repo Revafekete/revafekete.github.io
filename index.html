@@ -42,20 +42,8 @@
                         document.getElementById('introduction').innerHTML = 'Bemutatkozás 👋 ';
                         document.getElementById("bymc").setAttribute("data-text", "Támogass");
                         document.getElementById('support').innerHTML = '<h4>Támogatás.</h4';
-                            
-                            const script = document.createElement('script');
-                            script.type = 'text/javascript';
-                            script.src = 'https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js';
-                            script.setAttribute('data-name', 'bmc-button');
-                            script.setAttribute('data-slug', 'emmaszanyiq');
-                            script.setAttribute('data-color', 'rgba(20, 20, 22, 0.527)');
-                            script.setAttribute('data-emoji', '');
-                            script.setAttribute('data-font', 'Cookie');
-                            script.setAttribute('data-text', 'Támogass');
-                            script.setAttribute('data-outline-color', '#ffffff');
-                            script.setAttribute('data-font-color', '#ffffff');
-                            script.setAttribute('data-coffee-color', '#ffffff');
-                            document.getElementById('support').appendChild(script);
+                        addScript('Támogass');
+                           
 
                         document.getElementById('projects').innerHTML = 'Projektek.';
                         document.getElementById('contr').innerHTML = ' saját / <span class="kek">résztvevő</span>';
@@ -66,20 +54,8 @@
                         document.getElementById('knowledges').innerHTML = 'Knowledges.';
                         document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
                        document.getElementById('support').innerHTML = '<h4>Support.</h4';
+                        addScript('Support');
                             
-                            const script = document.createElement('script');
-                            script.type = 'text/javascript';
-                            script.src = 'https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js';
-                            script.setAttribute('data-name', 'bmc-button');
-                            script.setAttribute('data-slug', 'emmaszanyiq');
-                            script.setAttribute('data-color', 'rgba(20, 20, 22, 0.527)');
-                            script.setAttribute('data-emoji', '');
-                            script.setAttribute('data-font', 'Cookie');
-                            script.setAttribute('data-text', 'Support Me');
-                            script.setAttribute('data-outline-color', '#ffffff');
-                            script.setAttribute('data-font-color', '#ffffff');
-                            script.setAttribute('data-coffee-color', '#ffffff');
-                            document.getElementById('support').appendChild(script);
 
                         document.getElementById('projects').innerHTML = 'Projects. (Hungarian)';
                         document.getElementById('contr').innerHTML = ' own / <span class="kek">contributor</span>';
@@ -88,6 +64,22 @@
                 } catch (error) {
                     console.error('Error fetching geolocation data:', error);
                 }
+                function addScript(buttonText) {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js';
+    script.setAttribute('data-name', 'bmc-button');
+    script.setAttribute('data-slug', 'emmaszanyiq');
+    script.setAttribute('data-color', 'rgba(20, 20, 22, 0.527)');
+    script.setAttribute('data-emoji', '');
+    script.setAttribute('data-font', 'Cookie');
+    script.setAttribute('data-text', buttonText);
+    script.setAttribute('data-outline-color', '#ffffff');
+    script.setAttribute('data-font-color', '#ffffff');
+    script.setAttribute('data-coffee-color', '#ffffff');
+
+    document.getElementById('support').appendChild(script);
+}
             }
     
             document.addEventListener('DOMContentLoaded', setLanguage);
