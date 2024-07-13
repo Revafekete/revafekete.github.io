@@ -34,7 +34,7 @@
             async function setLanguage() {
                 try {
                     const userLang = navigator.language || navigator.userLanguage;
-    
+                    console.log(userLang)
                     if (userLang.startsWith('hu')) {
                         document.documentElement.lang = 'hu';
                         document.getElementById('fullname').innerHTML = 'Szanyi Emma 🏳️‍⚧️ <br><span class="kissebbszurke">@Emmatsoka.</span>';
