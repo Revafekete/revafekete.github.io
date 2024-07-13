@@ -44,7 +44,8 @@
                         document.getElementById('introduction').innerHTML = 'Bemutatkozás 👋 ';
                         document.getElementById("bymc").setAttribute("data-text", "Támogass");
                         document.getElementById('support').innerHTML = 'Támogatás. ';
-                        document.getElementById('projects').innerHTML = 'Projektek.   </h4>   <span class="kissebb"> saját / <span class="kek">résztvevő</span>';
+                        document.getElementById('projects').innerHTML = 'Projektek.';
+                        document.getElementById('contr').innerHTML = ' saját / <span class="kek">résztvevő</span>';
                         
                     } else {
                         document.documentElement.lang = 'en';
@@ -53,7 +54,8 @@
                         document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
                         document.getElementById('support').innerHTML = 'Support me. ';
                         document.getElementById("bymc").setAttribute("data-text", "Support");
-                        document.getElementById('projects').innerHTML = 'Projects. (Hungarian)  </h4>   <span class="kissebb"> own / <span class="kek">contributor</span>';
+                        document.getElementById('projects').innerHTML = 'Projects. (Hungarian)';
+                        document.getElementById('contr').innerHTML = ' own / <span class="kek">contributor</span>';
 
                     }
                 } catch (error) {
@@ -161,7 +163,7 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="box" id="projektek">
-                        <h4 id="projects">Projektek.   </h4>   <span class="kissebb"> saját / <span class="kek">résztvevő</span></span>
+                        <h4 id="projects">Projektek.   </h4>   <span class="kissebb" id="contr"> saját / <span class="kek">résztvevő</span></span>
                         <ul id="minibox-container">
                             <li> 
                                 <a href="https://www.wesoc.site/" target="_blank">
