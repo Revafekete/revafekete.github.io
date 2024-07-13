@@ -40,10 +40,20 @@
                     if (country === 'HU') {
                         document.documentElement.lang = 'hu';
                         document.getElementById('fullname').innerHTML = 'Szanyi Emma <br><span class="kissebbszurke">@Emmatsoka.</span>';
+                        document.getElementById('knowledges').innerHTML = 'Ismeretek.';
+                        document.getElementById('introduction').innerHTML = 'Bemutatkozás 👋 ';
+                        document.getElementById("bmc-button").setAttribute("data-text", "Támogass");
+                        document.getElementById('support').innerHTML = 'Támogatás. ';
+                        document.getElementById('projects').innerHTML = 'Projektek.   </h4>   <span class="kissebb"> saját / <span class="kek">résztvevő</span>';
                         
                     } else {
                         document.documentElement.lang = 'en';
                         document.getElementById('fullname').innerHTML = 'Emma Szanyi <br><span class="kissebbszurke">@Emmatsoka.</span>';
+                        document.getElementById('knowledges').innerHTML = 'Knowledges.';
+                        document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
+                        document.getElementById('support').innerHTML = 'Support me. ';
+                        document.getElementById("bmc-button").setAttribute("data-text", "Support");
+                        document.getElementById('projects').innerHTML = 'Projects. (Hungarian)  </h4>   <span class="kissebb"> own / <span class="kek">contributor</span>';
 
                     }
                 } catch (error) {
@@ -80,7 +90,7 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="box mb-4">
-                        <h4>Bemutatkozás 👋 </h4>
+                        <h4 id="introduction">Bemutatkozás 👋 </h4>
                         <p id="typing"></p>
 
                         <script>
@@ -129,14 +139,14 @@
                     </div>
                 </div>
                 <div class="col-xl-3">
-                    <div class="box mb-2">
+                    <div class="box mb-2" id="support">
                         <h4>Támogatás.</h4>
                         <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="emmaszanyiq" data-color="rgba(20, 20, 22, 0.527)" data-emoji=""  data-font="Cookie" data-text="Támogass" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#ffffff" ></script>
                     </div>
                 </div>
                     <div class="col-xl-5">
                     <div class="box" id="ismeretek">
-                        <h4>Ismeretek.</h4>
+                        <h4 id="knowledges">Ismeretek.</h4>
                         <ul id="minibox-container">
                             <li><a href="https://en.wikipedia.org/wiki/HTML" title="HTML"><div class="minibox"><img src="img/html.webp" alt=""></div></a></li>
                             <li><a href="https://en.wikipedia.org/wiki/CSS" title="CSS"><div class="minibox"><img src="img/css.png" alt=""></div></a></li>
@@ -151,7 +161,7 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="box" id="projektek">
-                        <h4>Projektek.   </h4>   <span class="kissebb"> saját / <span class="kek">résztvevő</span></span>
+                        <h4 id="projects">Projektek.   </h4>   <span class="kissebb"> saját / <span class="kek">résztvevő</span></span>
                         <ul id="minibox-container">
                             <li> 
                                 <a href="https://www.wesoc.site/" target="_blank">
