@@ -84,10 +84,39 @@
                         <p id="typing"></p>
 
                         <script>
-                            const text = "Üdv! Emma vagyok, webdesigner és szoftverfejlesztő. Gödöllőn élek, és nemrég fejeztem be a szoftverfejlesztő szakot, ahol 79%-os eredménnyel végeztem. Jelenleg webdesign és fejlesztés terén tevékenykedem, és mindig keresem az új lehetőségeket a fejlődésre és tanulásra. Szenvedélyesen szeretem a dizájnolást és az új technológiák felfedezését.";
+                            let text = ""; // A szöveg itt lesz tárolva
                             let index = 0;
-                            const speed = 30; 
-                    
+                            const speed = 30;
+                
+                            async function setLanguage() {
+                                try {
+                                    const response = await fetch('https://ip-api.com/json/');
+                                    const data = await response.json();
+                                    const country = data.countryCode;
+                
+                                    // Itt határozd meg a szöveget az országkód alapján
+                                    if (country === 'HU') {
+                                        text = "Üdv! Emma vagyok, webdesigner és szoftverfejlesztő. " +
+                                               "Gödöllőn élek, és nemrég fejeztem be a szoftverfejlesztő szakot, " +
+                                               "ahol 79%-os eredménnyel végeztem. Jelenleg webdesign és fejlesztés " +
+                                               "terén tevékenykedem, és mindig keresem az új lehetőségeket a " +
+                                               "fejlődésre és tanulásra. Szenvedélyesen szeretem a dizájnolást " +
+                                               "és az új technológiák felfedezését.";
+                                    } else {
+                                        text = "Hello! I'm Emma, a web designer and software developer. " +
+                                               "I live in Gödöllő and recently graduated from my software development " +
+                                               "course with a score of 79%. Currently, I work in web design and development, " +
+                                               "always looking for new opportunities to grow and learn. I'm passionate about " +
+                                               "design and exploring new technologies.";
+                                    }
+                
+                                    typeWriter();
+                
+                                } catch (error) {
+                                    console.error('Error fetching geolocation data:', error);
+                                }
+                            }
+                
                             function typeWriter() {
                                 if (index < text.length) {
                                     document.getElementById("typing").innerHTML += text.charAt(index);
@@ -95,8 +124,8 @@
                                     setTimeout(typeWriter, speed);
                                 }
                             }
-                    
-                            document.addEventListener("DOMContentLoaded", typeWriter);
+                
+                            document.addEventListener("DOMContentLoaded", setLanguage);
                         </script>
                     </div>
                 </div>
