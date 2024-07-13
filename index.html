@@ -33,10 +33,10 @@
         <script>
             async function setLanguage() {
                 try {
-                    const response = await fetch('https://cors-anywhere.herokuapp.com/https://ipinfo.io/json?token=37972a3fa9f77e');
+                    const response = await fetch('https://ip-api.com/json/');
                     const data = await response.json();
                     console.log(data);
-                    const country = data.country;
+                    const country = data.countryCode;
     
                     if (country === 'HU') {
                         document.documentElement.lang = 'hu';
@@ -108,9 +108,9 @@
                 
                             async function setLanguage() {
                                 try {
-                                    const response = await fetch('https://cors-anywhere.herokuapp.com/https://ipinfo.io/json?token=37972a3fa9f77e');
-                                    const data = await response.json();
-                                    const country = data.country;
+                            const response = await fetch('https://ip-api.com/json/');
+                            const data = await response.json();
+                            const country = data.countryCode;
                 
                                     if (country === 'HU') {
                                         text = "Üdv! Emma vagyok, webdesigner és szoftverfejlesztő. " +
