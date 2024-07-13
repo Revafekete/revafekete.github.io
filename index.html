@@ -39,11 +39,12 @@
     
                     if (country === 'HU') {
                         document.documentElement.lang = 'hu';
-                        document.getElementById('fullname').innerText = 'Szanyi Emma <br><span class="kissebbszurke">@Emmatsoka.</span>';
+                        document.getElementById('fullname').innerHTML = 'Szanyi Emma <br><span class="kissebbszurke">@Emmatsoka.</span>';
                         
                     } else {
                         document.documentElement.lang = 'en';
-                        document.getElementById('fullname').innerText = 'Emma Szanyi <br><span class="kissebbszurke">@Emmatsoka.</span>';
+                        document.getElementById('fullname').innerHTML = 'Emma Szanyi <br><span class="kissebbszurke">@Emmatsoka.</span>';
+
                     }
                 } catch (error) {
                     console.error('Error fetching geolocation data:', error);
