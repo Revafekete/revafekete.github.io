@@ -475,3 +475,8 @@ strike{
     opacity: 1 !important;
 
 }
+
+.keskeny{
+    font-weight: 200 !important;
+    opacity: 80% !important;
+}
