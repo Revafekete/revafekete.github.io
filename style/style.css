@@ -329,7 +329,7 @@ strike{
     height: 100%;
     overflow: hidden;
     z-index: -1;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><text x="0" y="100" font-size="40" font-family="Arial" fill="rgba(255, 255, 255, 0.040)" transform="rotate(50 100 100)">EMMATSOKA</text></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><text x="0" y="100" font-size="40" font-family="Arial" fill="rgba(255, 255, 255, 0.040)" transform="rotate(50 100 100)">revafekete</text></svg>');
     background-size: 200px 200px;
     animation: moveBackground 30s linear infinite;
 }
