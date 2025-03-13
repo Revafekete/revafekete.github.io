@@ -151,7 +151,7 @@
 
                         <script>
                             let text = "Üdv! Réva vagyok, webdesigner és szoftverfejlesztő. " +
-                                               "Gödöllőn élek, és nemrég fejeztem be a szoftverfejlesztő szakot, " +
+                                               "Pomázon élek, nemrég fejeztem be a szoftverfejlesztő szakot, " +
                                                "ahol 79%-os eredménnyel végeztem. Jelenleg webdesign és fejlesztés " +
                                                "terén tevékenykedem, és mindig keresem az új lehetőségeket a " +
                                                "fejlődésre és tanulásra. Szenvedélyesen szeretem a dizájnolást " +
@@ -165,61 +165,67 @@
                 
                                     if (userLang.startsWith('hu')) {
                                         text = "Üdv! Réva vagyok, webdesigner és szoftverfejlesztő. " +
-                                               "Gödöllőn élek, és nemrég fejeztem be a szoftverfejlesztő szakot, " +
+                                               "Pomázon élek, és nemrég fejeztem be a szoftverfejlesztő szakot, " +
                                                "ahol 79%-os eredménnyel végeztem. Jelenleg webdesign és fejlesztés " +
                                                "terén tevékenykedem, és mindig keresem az új lehetőségeket a " +
                                                "fejlődésre és tanulásra. Szenvedélyesen szeretem a dizájnolást " +
                                                "és az új technológiák felfedezését.";
                                     } else if (userLang.startsWith('en')) {
                                         text = "Hello! I'm Réva, a web designer and software developer. " +
-                                            "I live in Gödöllő (Hungary) and recently graduated from my software development " +
+                                            "I live in Pomáz (Hungary) and recently graduated from my software development " +
                                             "course with a score of 79%. Currently, I work in web design and development, " +
                                             "always looking for new opportunities to grow and learn. I'm passionate about " +
                                             "design and exploring new technologies.";
 
                                     } else if (userLang.startsWith('ja')) {
                                         text = "こんにちは！私はエマです。ウェブデザイナーでソフトウェア開発者です。 " +
-                                            "ハンガリーのゴドッロに住んでいて、最近ソフトウェア開発コースを79%の成績で卒業しました。" +
+                                            "ハンガリーのポマーゼに住んでいて、最近ソフトウェア開発コースを79%の成績で卒業しました。" +
                                             "現在、ウェブデザインと開発に取り組んでおり、成長と学びの新しい機会を常に探しています。" +
                                             "デザインと新しい技術の探求に情熱を持っています。";
 
                                     } else if (userLang.startsWith('zh')) {
                                         text = "你好！我是艾玛，一个网页设计师和软件开发者。 " +
-                                            "我住在匈牙利的戈多洛，最近以79%的成绩从软件开发课程毕业。" +
+                                            "我住在匈牙利的波玛兹，最近以79%的成绩从软件开发课程毕业。" +
                                             "目前，我从事网页设计和开发工作，总是寻找新的机会来成长和学习。" +
                                             "我对设计和探索新技术充满热情。";
 
                                     } else if (userLang.startsWith('ru')) {
-                                        text = "Привет! Я Эмма, веб-дизайнер и разработчик программного обеспечения. " +
-                                            "Я живу в Гёдёллё (Венгрия) и недавно закончила курс по разработке программного обеспечения с оценкой 79%. " +
+                                        text = "Привет! Я Reva, веб-дизайнер и разработчик программного обеспечения. " +
+                                            "Я живу в Помазе (Венгрия) и недавно закончила курс по разработке программного обеспечения с оценкой 79%. " +
                                             "В настоящее время я работаю в области веб-дизайна и разработки, всегда ищу новые возможности для роста и обучения. " +
                                             "Я увлечена дизайном и исследованием новых технологий.";
 
                                     } else if (userLang.startsWith('es')) {
                                         text = "¡Hola! Soy Réva, diseñadora web y desarrolladora de software. " +
-                                            "Vivo en Gödöllő (Hungría) y recientemente me gradué de mi curso de desarrollo de software con una puntuación del 79%. " +
+                                            "Vivo en Pomáz (Hungría) y recientemente me gradué de mi curso de desarrollo de software con una puntuación del 79%. " +
                                             "Actualmente trabajo en diseño y desarrollo web, siempre buscando nuevas oportunidades para crecer y aprender. " +
                                             "Me apasiona el diseño y explorar nuevas tecnologías.";
 
                                     } else if (userLang.startsWith('de')) {
                                         text = "Hallo! Ich bin Réva, eine Webdesignerin und Softwareentwicklerin. " +
-                                            "Ich lebe in Gödöllő (Ungarn) und habe kürzlich meinen Softwareentwicklungs-Kurs mit 79% abgeschlossen. " +
+                                            "Ich lebe in Pomáz (Ungarn) und habe kürzlich meinen Softwareentwicklungs-Kurs mit 79% abgeschlossen. " +
                                             "Derzeit arbeite ich im Webdesign und in der Entwicklung und suche immer nach neuen Möglichkeiten, zu wachsen und zu lernen. " +
                                             "Ich bin leidenschaftlich an Design und der Erkundung neuer Technologien interessiert.";
 
                                     } else if (userLang.startsWith('fr')) {
                                         text = "Bonjour! Je suis Réva, designer web et développeuse de logiciels. " +
-                                            "Je vis à Gödöllő (Hongrie) et je viens de terminer mon cours de développement de logiciels avec une note de 79%. " +
+                                            "Je vis à Pomáz (Hongrie) et je viens de terminer mon cours de développement de logiciels avec une note de 79%. " +
                                             "Actuellement, je travaille dans le design et le développement web, toujours à la recherche de nouvelles opportunités pour grandir et apprendre. " +
                                             "Je suis passionnée par le design et l'exploration de nouvelles technologies.";
 
+                                    } else if (userLang.startsWith('es')) {
+                                        text = "¡Hola! Soy Emma, diseñadora web y desarrolladora de software. " +
+                                            "Vivo en Pomáz, Hungría, y recientemente me gradué de un curso de desarrollo de software con un 79% de calificación. " +
+                                            "Actualmente, trabajo en diseño y desarrollo web, siempre buscando nuevas oportunidades para crecer y aprender. " +
+                                            "Me apasiona el diseño y la exploración de nuevas tecnologías."
+
                                     } else { 
                                         text = "Hello! I'm Réva, a web designer and software developer. " +
-                                               "I live in Gödöllő (Hungary) and recently graduated from my software development " +
+                                               "I live in Pomáz (Hungary) and recently graduated from my software development " +
                                                "course with a score of 79%. Currently, I work in web design and development, " +
                                                "always looking for new opportunities to grow and learn. I'm passionate about " +
                                                "design and exploring new technologies.";
-                                    }
+                                    } 
                 
                                     typeWriter();
                 
